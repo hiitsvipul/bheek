@@ -1,0 +1,25 @@
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

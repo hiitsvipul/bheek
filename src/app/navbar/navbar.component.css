@@ -1,0 +1,28 @@
+nav.scrolled {
+  @apply shadow-lg;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  @apply bg-gradient-to-r from-blue-600 to-purple-600;
+}
+
+.mobile-menu {
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
