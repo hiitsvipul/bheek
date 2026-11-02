@@ -14,23 +14,23 @@ export class AboutComponent implements AfterViewInit {
   beliefs = [
     {
       icon: 'code',
-      title: 'Clean and maintainable code',
-      description: 'Writing code that is easy to understand, test, and maintain'
+      title: 'Creative Storytelling',
+      description: 'Crafting compelling narratives that connect with your audience'
     },
     {
       icon: 'scale',
-      title: 'Scalable system design',
-      description: 'Building systems that grow with your business needs'
+      title: 'Strategic Growth',
+      description: 'Building sustainable growth through data-driven strategies'
     },
     {
       icon: 'shield',
-      title: 'Performance and security',
-      description: 'Ensuring fast, reliable, and secure applications'
+      title: 'Brand Authenticity',
+      description: 'Creating genuine connections that build trust and loyalty'
     },
     {
       icon: 'target',
-      title: 'Long-term product thinking',
-      description: 'Planning for sustainability and future enhancements'
+      title: 'Consistent Quality',
+      description: 'Delivering high-quality content that reflects your brand values'
     }
   ];
 

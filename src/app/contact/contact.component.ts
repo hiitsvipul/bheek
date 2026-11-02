@@ -27,7 +27,7 @@ export class ContactComponent implements AfterViewInit {
     {
       name: 'WhatsApp',
       icon: 'whatsapp',
-      url: 'https://wa.me/+916261221248',
+      url: 'https://wa.me/+917440944184',
       color: 'hover:text-green-600'
     },
     {
@@ -39,8 +39,14 @@ export class ContactComponent implements AfterViewInit {
     {
       name: 'Email',
       icon: 'email',
-      url: 'mailto:vipultripathi182cse@gmail.com',
+      url: 'mailto:vandanasocialstudio@gmail.com',
       color: 'hover:text-red-600'
+    },
+    {
+      name: 'Instagram',
+      icon: 'instagram',
+      url: 'https://www.instagram.com/vandanasocialstudio/',
+      color: 'hover:text-pink-600'
     }
   ];
 
@@ -48,8 +54,8 @@ export class ContactComponent implements AfterViewInit {
     {
       icon: 'email',
       title: 'Email',
-      value: 'vipultripathi182cse@gmail.com',
-      link: 'mailto:vipultripathi182cse@gmail.com'
+      value: 'vandanasocialstudio@gmail.com',
+      link: 'mailto:vandanasocialstudio@gmail.com'
     },
     {
       icon: 'location',
@@ -90,9 +96,11 @@ export class ContactComponent implements AfterViewInit {
         'service_xjfhcog',  // Replace with your EmailJS service ID
         'template_7f2ffhl', // Replace with your EmailJS template ID
         {
-          name: this.formData.name,
+           name: this.formData.name,
           message: this.formData.projectDetails,
           time: new Date().toLocaleString(),
+          from_email: this.formData.email,
+          title: 'Business Inquiry from FlexBoxDevs Contact Form'
         }
       );
 

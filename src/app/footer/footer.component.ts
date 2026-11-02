@@ -17,22 +17,22 @@ export class FooterComponent {
     { label: 'About', id: 'about' },
     { label: 'Services', id: 'services' },
     // { label: 'Projects', id: 'projects' },
-    { label: 'Tech Stack', id: 'tech-stack' },
+    { label: 'Our Process', id: 'tech-stack' },
     { label: 'Contact', id: 'contact' }
   ];
 
   services = [
-    'Full Stack Development',
-    'Admin Dashboards',
-    'REST API Development',
-    'Authentication Systems'
+    'Social Media Management',
+    'Video Editing & Reels',
+    'Graphic Design',
+    'Brand Strategy'
   ];
 
   technologies = [
-    'Angular',
-    'Spring Boot',
-    'MongoDB',
-    'Tailwind CSS'
+    'Instagram',
+    'YouTube',
+    'Facebook',
+    'Content Strategy'
   ];
 
   constructor(private scrollService: ScrollService) {}

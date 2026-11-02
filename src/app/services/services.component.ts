@@ -20,76 +20,52 @@ export class ServicesComponent implements AfterViewInit {
 
   services: Service[] = [
     {
-      icon: 'layers',
-      title: 'Full-Stack Web Application Development',
-      description: 'We design and build complete web applications from scratch using Angular, Spring Boot, and MongoDB. From frontend UI to backend logic and database architecture, we deliver scalable, secure, and production-ready solutions tailored to your business needs.',
-      features: []
+      icon: 'instagram',
+      title: 'Social Media Management',
+      description: 'Complete management of your Instagram, Facebook, and other social media accounts. From content planning to posting and engagement, we handle everything to keep your brand active and growing.',
+      features: ['Daily posting & scheduling', 'Community engagement', 'Growth strategy', 'Performance analytics']
     },
     {
-      icon: 'dashboard',
-      title: 'Admin Dashboards & Business Analytics',
-      description: 'We create powerful admin panels and dashboards that help businesses monitor data, users, and performance in real time. Our dashboards are designed for clarity, speed, and scalability.',
-      features: [
-        'Role-based admin panels',
-        'Analytics & reporting dashboards',
-        'Data tables, filters & charts',
-        'Secure access control'
-      ]
-    },
-    {
-      icon: 'api',
-      title: 'REST API Development & Integration',
-      description: 'We build clean, secure, and scalable REST APIs using Spring Boot that power web apps, mobile apps, and third-party integrations.',
-      features: [
-        'Backend for Angular applications',
-        'Mobile app APIs',
-        'Third-party service integration'
-      ]
-    },
-    {
-      icon: 'lock',
-      title: 'Authentication & Authorization Systems',
-      description: 'We implement secure authentication systems to protect applications and manage user access efficiently.',
-      features: [
-        'Login & registration systems',
-        'JWT-based authentication',
-        'Role & permission management',
-        'Secure session handling'
-      ]
-    },
-    {
-      icon: 'frontend',
-      title: 'Frontend Development with Angular',
-      description: 'We develop fast, responsive, and user-friendly frontend applications using Angular, Tailwind CSS, and Angular Material.',
-      features: [
-        'Responsive UI',
-        'Performance optimization',
-        'Clean component architecture',
-        'Modern animations & interactions'
-      ]
-    },
-    {
-      icon: 'backend',
-      title: 'Backend Development with Spring Boot',
-      description: 'We develop robust backend systems with clean architecture and scalable design principles.',
-      features: [
-        'Business logic implementation',
-        'API security & validation',
-        'Error handling & logging',
-        'Microservice-ready structure'
-      ]
-    },
-    {
-      icon: 'database',
-      title: 'Database Design & Optimization',
-      description: 'We design MongoDB schemas that are optimized for performance, scalability, and long-term growth.',
-      features: []
+      icon: 'video',
+      title: 'Video Editing & Reels',
+      description: 'Professional video editing for Instagram Reels, YouTube Shorts, and long-form content. We create engaging videos that capture attention and drive engagement.',
+      features: ['Reels & Shorts editing', 'Transitions & effects', 'Captions & subtitles', 'Music & sound design']
     },
     {
       icon: 'design',
-      title: 'UI/UX & Product Implementation',
-      description: 'We convert designs and ideas into polished user interfaces that feel modern, intuitive, and reliable — focused on usability and business outcomes.',
-      features: []
+      title: 'Graphic Design & Animations',
+      description: 'Eye-catching graphics and animations for your social media posts, stories, and brand materials. We create designs that stand out and reflect your brand identity.',
+      features: ['Social media posts', 'Story templates', 'Animated graphics', 'Brand consistency']
+    },
+    {
+      icon: 'branding',
+      title: 'Logo Design & Branding',
+      description: 'Professional logo design and complete brand identity packages. We help you build a strong visual identity that resonates with your target audience.',
+      features: ['Logo design', 'Brand colors & fonts', 'Brand guidelines', 'Business cards & stationery']
+    },
+    {
+      icon: 'ads',
+      title: 'Page Boosting & Ads',
+      description: 'Strategic social media advertising campaigns to reach your target audience and grow your business. We manage Facebook and Instagram ads for maximum ROI.',
+      features: ['Ad campaign strategy', 'Audience targeting', 'A/B testing', 'Performance optimization']
+    },
+    {
+      icon: 'seo',
+      title: 'SEO & Profile Optimization',
+      description: 'Optimize your social media profiles and content for maximum discoverability. We ensure your brand is easily found by your target audience.',
+      features: ['Profile optimization', 'Hashtag research', 'Bio & description writing', 'SEO best practices']
+    },
+    {
+      icon: 'content',
+      title: 'Content Creation & Strategy',
+      description: 'Comprehensive content strategy and creation services. We develop content calendars, create engaging posts, and ensure your brand message is consistent.',
+      features: ['Content calendar planning', 'Copywriting', 'Photography guidance', 'Brand storytelling']
+    },
+    {
+      icon: 'growth',
+      title: 'Instagram & YouTube Growth',
+      description: 'Dedicated growth strategies for Instagram and YouTube. We help you gain organic followers, increase engagement, and build a loyal community.',
+      features: ['Organic growth tactics', 'Engagement strategies', 'Collaboration opportunities', 'Analytics & insights']
     }
   ];
 

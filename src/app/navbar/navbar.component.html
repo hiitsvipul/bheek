@@ -7,8 +7,17 @@
       
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a (click)="navigateTo('home')" class="cursor-pointer text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Flexbox Devs
+        <a (click)="navigateTo('home')" class="cursor-pointer">
+          <img 
+            *ngIf="!themeService.darkMode()" 
+            src="vss final logo black.png" 
+            alt="Vandana Social Studios" 
+            class="h-16 sm:h-24 md:h-32 w-auto">
+          <img 
+            *ngIf="themeService.darkMode()" 
+            src="vss final logo white.png" 
+            alt="Vandana Social Studios" 
+            class="h-16 sm:h-24 md:h-32 w-auto">
         </a>
       </div>
 
@@ -18,7 +27,7 @@
           *ngFor="let item of menuItems"
           (click)="navigateTo(item.id)"
           [class.active]="activeSection() === item.id"
-          class="nav-link cursor-pointer text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200 font-medium relative">
+          class="nav-link cursor-pointer text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors duration-200 font-medium relative">
           {{ item.label }}
         </a>
         
@@ -76,7 +85,7 @@
         *ngFor="let item of menuItems"
         (click)="navigateTo(item.id)"
         [class.active]="activeSection() === item.id"
-        class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium cursor-pointer">
+        class="block py-2 text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium cursor-pointer">
         {{ item.label }}
       </a>
     </div>

@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 interface Technology {
   name: string;
-  category: 'Frontend' | 'Backend' | 'Database' | 'Security' | 'Practices';
+  category: 'Step1' | 'Step2' | 'Step3' | 'Step4' | 'Step5';
   icon: string;
   description?: string;
 }
@@ -19,31 +19,35 @@ export class TechStackComponent implements AfterViewInit {
   @ViewChild('techStackSection') techStackSection!: ElementRef;
 
   technologies: Technology[] = [
-    { name: 'Angular', category: 'Frontend', icon: 'angular', description: 'Scalable, component-based frontend framework' },
-    { name: 'Tailwind CSS', category: 'Frontend', icon: 'tailwind', description: 'Utility-first CSS for modern UI' },
-    { name: 'Angular Material', category: 'Frontend', icon: 'material', description: 'Accessible & consistent UI components' },
-    { name: 'TypeScript', category: 'Frontend', icon: 'typescript', description: 'Type-safe development' },
-    { name: 'Java', category: 'Backend', icon: 'java', description: 'Reliable and enterprise-grade backend language' },
-    { name: 'Spring Boot', category: 'Backend', icon: 'spring', description: 'Rapid backend development with clean architecture' },
-    { name: 'REST APIs', category: 'Backend', icon: 'api', description: 'Secure and scalable API design' },
-    { name: 'Microservices', category: 'Backend', icon: 'microservices', description: 'Modular architecture pattern' },
-    { name: 'MongoDB', category: 'Database', icon: 'mongodb', description: 'Flexible, scalable NoSQL database' },
-    { name: 'JWT Authentication', category: 'Security', icon: 'jwt', description: 'Token-based authentication' },
-    { name: 'Role-Based Access Control', category: 'Security', icon: 'security', description: 'RBAC security model' },
-    { name: 'Clean Architecture', category: 'Security', icon: 'architecture', description: 'Clean Architecture Principles' },
-    { name: 'Component-Driven', category: 'Practices', icon: 'components', description: 'Component-driven development' },
-    { name: 'Scalable Design', category: 'Practices', icon: 'scale', description: 'Scalable system design' },
-    { name: 'Performance', category: 'Practices', icon: 'performance', description: 'Performance optimization' },
-    { name: 'Secure Coding', category: 'Practices', icon: 'secure', description: 'Secure coding practices' }
+    { name: 'Brand Analysis', category: 'Step1', icon: 'angular', description: 'Understanding your brand and target audience' },
+    { name: 'Market Research', category: 'Step1', icon: 'tailwind', description: 'Analyzing competitors and trends' },
+    { name: 'Goal Setting', category: 'Step1', icon: 'material', description: 'Defining clear, measurable objectives' },
+    
+    { name: 'Content Calendar', category: 'Step2', icon: 'java', description: 'Planning posts and publishing schedule' },
+    { name: 'Visual Strategy', category: 'Step2', icon: 'spring', description: 'Creating consistent visual themes' },
+    { name: 'Hashtag Strategy', category: 'Step2', icon: 'api', description: 'Researching and planning hashtags' },
+    
+    { name: 'Content Creation', category: 'Step3', icon: 'mongodb', description: 'Designing graphics and editing videos' },
+    { name: 'Copywriting', category: 'Step3', icon: 'jwt', description: 'Writing engaging captions and copy' },
+    { name: 'Quality Review', category: 'Step3', icon: 'security', description: 'Ensuring brand consistency and quality' },
+    
+    { name: 'Scheduled Posting', category: 'Step4', icon: 'architecture', description: 'Publishing content at optimal times' },
+    { name: 'SEO Optimization', category: 'Step4', icon: 'components', description: 'Optimizing for discoverability' },
+    { name: 'Community Engagement', category: 'Step4', icon: 'scale', description: 'Responding and engaging with audience' },
+    
+    { name: 'Analytics Review', category: 'Step5', icon: 'performance', description: 'Monitoring performance metrics' },
+    { name: 'Strategy Refinement', category: 'Step5', icon: 'secure', description: 'Adjusting based on insights' },
+    { name: 'Growth Reporting', category: 'Step5', icon: 'typescript', description: 'Regular progress reports' }
   ];
 
   get categorizedTech() {
-    const categories = ['Frontend', 'Backend', 'Database', 'Security', 'Practices'];
+    const categories = ['Step1', 'Step2', 'Step3', 'Step4', 'Step5'];
     return categories.map(category => ({
-      name: category === 'Frontend' ? 'Frontend Technologies' : 
-            category === 'Backend' ? 'Backend Technologies' :
-            category === 'Security' ? 'Security & Architecture' :
-            category === 'Practices' ? 'Development Practices' : category,
+      name: category === 'Step1' ? 'Research & Strategy' : 
+            category === 'Step2' ? 'Content Planning' :
+            category === 'Step3' ? 'Creation & Editing' :
+            category === 'Step4' ? 'Publishing & Optimization' : 
+            'Growth Tracking & Improvement',
       items: this.technologies.filter(tech => tech.category === category)
     }));
   }

@@ -5,11 +5,11 @@
       
       <!-- Company Info -->
       <div class="lg:col-span-1">
-        <h3 class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-          Flexbox Devs
+        <h3 class="text-2xl font-bold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent mb-4">
+          Vandana Social Studios
         </h3>
         <p class="text-gray-400 mb-6 leading-relaxed">
-          Building scalable web applications with Angular & Spring Boot.
+          Creative social media management and content creation services to grow your brand.
         </p>
         <div class="flex space-x-4">
           <!-- <a href="https://github.com" target="_blank" rel="noopener noreferrer"
@@ -19,13 +19,13 @@
             </svg>
           </a> -->
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-             class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+             class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-colors duration-300">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
           </a>
           <a href="mailto:vipultripathi182cse@gmail.com"
-             class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-blue-600 transition-colors duration-300">
+             class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-orange-600 transition-colors duration-300">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
             </svg>
@@ -40,7 +40,7 @@
           <li *ngFor="let link of quickLinks">
             <a 
               (click)="navigateTo(link.id)"
-              class="hover:text-blue-400 transition-colors cursor-pointer block">
+              class="hover:text-orange-400 transition-colors cursor-pointer block">
               {{ link.label }}
             </a>
           </li>
@@ -57,9 +57,9 @@
         </ul>
       </div>
 
-      <!-- Technologies -->
+      <!-- Platforms -->
       <div>
-        <h4 class="text-white font-semibold text-lg mb-4">Technologies</h4>
+        <h4 class="text-white font-semibold text-lg mb-4">Platforms</h4>
         <ul class="space-y-2">
           <li *ngFor="let tech of technologies">
             <span class="text-gray-400 block">{{ tech }}</span>
@@ -75,11 +75,11 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         <p class="text-gray-400 text-sm text-center md:text-left">
-          © {{ currentYear }} — Full Stack Web Development Team
+          © {{ currentYear }} Vandana Social Studios — Creative Social Media Management
         </p>
         <div class="flex items-center space-x-6 text-sm">
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Privacy Policy</a>
-          <a href="#" class="text-gray-400 hover:text-blue-400 transition-colors">Terms of Service</a>
+          <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">Privacy Policy</a>
+          <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -88,7 +88,7 @@
   <!-- Scroll to Top Button -->
   <button
     (click)="scrollToTop()"
-    class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center z-40">
+    class="fixed bottom-8 right-8 w-12 h-12 bg-gradient-to-r from-orange-600 to-orange-500 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center z-40">
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
     </svg>

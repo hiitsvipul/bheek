@@ -21,28 +21,28 @@ export class ProjectsComponent implements AfterViewInit {
 
   projects: Project[] = [
     {
-      title: 'Enterprise Admin Dashboard',
-      description: 'A role-based admin dashboard built for managing users, data, and analytics efficiently.',
-      techStack: ['Angular', 'Spring Boot', 'MongoDB'],
-      features: ['Secure authentication & authorization', 'Analytics charts & KPI cards', 'Advanced filtering & data tables', 'Scalable backend APIs']
+      title: 'Instagram Growth Project',
+      description: 'Grew a lifestyle brand\'s Instagram from 2K to 15K followers in 6 months through creative content and strategic engagement.',
+      techStack: ['Instagram', 'Reels', 'Stories'],
+      features: ['Daily content creation', 'Reel editing & trends', 'Community engagement', 'Growth analytics']
     },
     {
-      title: 'Business Management System',
-      description: 'A full-stack web application designed to manage business operations through a centralized system.',
-      techStack: ['Angular', 'Spring Boot', 'MongoDB'],
-      features: ['Admin & user roles', 'CRUD operations with validation', 'REST APIs', 'Responsive frontend']
+      title: 'YouTube Channel Management',
+      description: 'Managed a tech review channel, creating thumbnails, editing videos, and optimizing for YouTube algorithm.',
+      techStack: ['YouTube', 'Video Editing', 'SEO'],
+      features: ['Thumbnail design', 'Video editing', 'SEO optimization', 'Consistent posting schedule']
     },
     {
-      title: 'Authentication & User Management Platform',
-      description: 'A secure authentication system with role-based access control for modern web applications.',
-      techStack: ['Angular', 'Spring Boot', 'MongoDB'],
-      features: ['JWT authentication', 'Role & permission management', 'Secure API access', 'Modular backend architecture']
+      title: 'Brand Identity & Social Media Launch',
+      description: 'Created complete brand identity and launched social media presence for a new fashion startup.',
+      techStack: ['Logo Design', 'Branding', 'Multi-platform'],
+      features: ['Logo & brand guidelines', 'Instagram & Facebook setup', 'Content strategy', 'Launch campaign']
     },
     {
-      title: 'Data-Driven Web Application',
-      description: 'A scalable application focused on handling large datasets with efficient APIs and optimized database design.',
-      techStack: ['Angular', 'Spring Boot', 'MongoDB'],
-      features: ['Performance-optimized APIs', 'MongoDB schema design', 'Clean UI for data visualization', 'Scalable architecture']
+      title: 'E-commerce Social Media Campaign',
+      description: 'Ran successful Facebook and Instagram ad campaigns that generated 3x ROI for an online store.',
+      techStack: ['Facebook Ads', 'Instagram Ads', 'Analytics'],
+      features: ['Ad campaign strategy', 'Audience targeting', 'Creative design', 'Performance tracking']
     }
   ];
 

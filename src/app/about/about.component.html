@@ -6,32 +6,32 @@
       <h2 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
         About Us
       </h2>
-      <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
+      <div class="w-24 h-1 bg-gradient-to-r from-orange-600 to-orange-500 mx-auto rounded-full"></div>
     </div>
 
     <!-- Main Content -->
-    <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+    <div class="max-w-4xl mx-auto mb-20">
       
-      <!-- Text Content -->
-      <div class="space-y-6 fade-in-on-scroll">
+      <!-- Text Content - Centered and Uniform -->
+      <div class="space-y-6 fade-in-on-scroll text-center">
         <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-          We are a full-stack web development team focused on building modern, scalable, and maintainable applications.
+          Vandana Social Studios is a creative social media management studio dedicated to helping brands grow their digital presence.
         </p>
         
         <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-          Our strength lies in understanding business requirements and translating them into clean architecture, 
-          intuitive user interfaces, and reliable backend systems.
+          We specialize in crafting compelling content, managing social media accounts, and building strong brand identities 
+          that resonate with your target audience.
         </p>
         
         <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-          From complex dashboards and role-based systems to secure REST APIs and responsive frontends, 
-          we build solutions that are designed to grow with your business.
+          From Instagram reels and YouTube content to complete brand strategy, 
+          we help businesses tell their story and connect with their community in meaningful ways.
         </p>
       </div>
 
-      <!-- Visual Element -->
-      <div class="relative fade-in-on-scroll">
-        <div class="relative bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white shadow-2xl transform hover:scale-105 transition-transform duration-300">
+      <!-- Visual Element - Hidden as requested -->
+      <!-- <div class="relative fade-in-on-scroll">
+        <div class="relative bg-gradient-to-br from-orange-600 to-orange-500 rounded-2xl p-8 text-white shadow-2xl transform hover:scale-105 transition-transform duration-300">
           <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
           <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full -ml-12 -mb-12"></div>
           
@@ -42,30 +42,30 @@
                 <svg class="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                <p class="text-white/90">Enterprise-grade applications</p>
+                <p class="text-white/90">Creative content strategy</p>
               </div>
               <div class="flex items-start space-x-3">
                 <svg class="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                <p class="text-white/90">Scalable architecture design</p>
+                <p class="text-white/90">Brand identity & storytelling</p>
               </div>
               <div class="flex items-start space-x-3">
                 <svg class="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                <p class="text-white/90">Performance optimization</p>
+                <p class="text-white/90">Social media growth tactics</p>
               </div>
               <div class="flex items-start space-x-3">
                 <svg class="w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
-                <p class="text-white/90">Security best practices</p>
+                <p class="text-white/90">Video editing & production</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
 
     <!-- Beliefs Section -->
@@ -77,10 +77,10 @@
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div 
           *ngFor="let belief of beliefs"
-          class="group p-6 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-gradient-to-br hover:from-blue-50 hover:to-purple-50 dark:hover:from-gray-700 dark:hover:to-gray-700 transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-500 hover:shadow-lg">
+          class="group p-6 bg-gray-50 dark:bg-gray-800 rounded-xl hover:bg-gradient-to-br hover:from-orange-50 hover:to-orange-50 dark:hover:from-gray-700 dark:hover:to-gray-700 transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-orange-500 dark:hover:border-orange-500 hover:shadow-lg">
           
           <!-- Icon -->
-          <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+          <div class="w-12 h-12 bg-gradient-to-br from-orange-600 to-orange-500 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
             <svg *ngIf="belief.icon === 'code'" class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
             </svg>

@@ -9,7 +9,7 @@ nav.scrolled {
   left: 0;
   right: 0;
   height: 2px;
-  @apply bg-gradient-to-r from-blue-600 to-purple-600;
+  @apply bg-gradient-to-r from-orange-600 to-orange-500;
 }
 
 .mobile-menu {

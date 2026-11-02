@@ -20,7 +20,7 @@ export class NavbarComponent {
     { id: 'about', label: 'About' },
     { id: 'services', label: 'Services' },
     // { id: 'projects', label: 'Projects' },
-    { id: 'tech-stack', label: 'Tech Stack' },
+    { id: 'tech-stack', label: 'Our Process' },
     { id: 'contact', label: 'Contact' }
   ];
 

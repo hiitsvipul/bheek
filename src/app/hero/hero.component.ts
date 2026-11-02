@@ -11,10 +11,10 @@ import { ScrollService } from '../services/scroll.service';
 })
 export class HeroComponent {
   highlights = [
-    'Full Stack Development',
-    'Secure REST APIs',
-    'Admin Dashboards & Analytics',
-    'Clean, Scalable Architecture'
+    'Social Media Management',
+    'Video & Reels Editing',
+    'Brand Growth Strategy',
+    'Creative Content Creation'
   ];
 
   constructor(private scrollService: ScrollService) {}
